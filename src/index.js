@@ -12,7 +12,7 @@ import { sessionReducer } from '@liquid-labs/catalyst-users'
 import { createMuiTheme } from '@material-ui/core/styles'
 
 import './index.css'
-import App from './App'
+import { App } from './App'
 
 // import { resources } from './unoResources'
 // import { contexts } from './unoContexts'
