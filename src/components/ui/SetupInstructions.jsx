@@ -5,6 +5,7 @@ const generalSettingsUrl = `https://console.firebase.google.com/project/${projec
 const authSettingsUrl = `https://console.firebase.google.com/project/${projectId}/authentication`
 const authProvidersSettingsUrl = `https://console.firebase.google.com/project/${projectId}/authentication/users`
 const databaseSettingsUrl = `https://console.firebase.google.com/project/${projectId}/database`
+const rulesSettingsUrl = `https://console.firebase.google.com/project/${projectId}/database/firestore/rules`
 
 export const SetupInstructions = () => (
   <div>
@@ -43,6 +44,24 @@ export const SetupInstructions = () => (
         <ol>
           <li>Click 'Create database'.</li>
           <li>Select to 'Start in locked mode' and hit 'Enable'.</li>
+          <li>Go to the <a href={rulesSettingsUrl}>'Rules' sub-section</a>.</li>
+          <li>Copy the following rules definition into the edit box and 'publish' the changes.
+            <pre>{`
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Make sure the uid of the requesting user matches name of the user
+    // document. The wildcard expression {userId} makes the userId variable
+    // available in rules.
+    match /users/{userId} {
+      allow read, update, delete: if request.auth.uid == userId;
+      allow create: if request.auth.uid != null;
+    }
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}`}
+</pre></li>
         </ol>
       </li>
       <li>Back to the <a href={authSettingsUrl}>authentication management screen</a> and click 'Web setup'.
