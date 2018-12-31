@@ -12,7 +12,7 @@ import { sessionReducer } from '@liquid-labs/catalyst-users'
 import { createMuiTheme } from '@material-ui/core/styles'
 
 import './index.css'
-import App from './App'
+import { App } from './App'
 
 // import { resources } from './unoResources'
 // import { contexts } from './unoContexts'
@@ -35,7 +35,6 @@ config.setRootReducer(rootReducer)
 
 const theme = createMuiTheme()
 const rstore = store.reduxStore()
-console.log(`store is: ${rstore}`)
 
 ReactDOM.render(
   <Redux.Provider store={rstore}>
