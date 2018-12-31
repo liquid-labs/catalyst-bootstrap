@@ -35,7 +35,6 @@ config.setRootReducer(rootReducer)
 
 const theme = createMuiTheme()
 const rstore = store.reduxStore()
-console.log(`store is: ${rstore}`)
 
 ReactDOM.render(
   <Redux.Provider store={rstore}>
