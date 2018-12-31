@@ -6,8 +6,8 @@
   "private": true,
   "dependencies": {
     "@liquid-labs/catalyst-core": "0.0.5",
-    "@liquid-labs/catalyst-firewrap": "^1.0.1",
-    "@liquid-labs/catalyst-users": "0.0.6",
+    "@liquid-labs/catalyst-firewrap": "^1.0.2",
+    "@liquid-labs/catalyst-users": "0.0.7",
     "@liquid-labs/mui-extensions": "0.0.4",
     "@liquid-labs/react-validation": "0.0.5",
     "@liquid-labs/regex-repo": "^1.0.0-alpha.2",
