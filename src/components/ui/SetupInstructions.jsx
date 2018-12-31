@@ -59,5 +59,6 @@ export const SetupInstructions = () => (
       </li>
       <li>Restart the development server and the bootstrap login screen should appear.</li>
     </ol>
+    References: <a href="https://firebase.google.com/docs/firestore/security/rules-conditions">Writing conditions for Cloud Firestore Security Rules</a>
   </div>
 )
