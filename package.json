@@ -30,9 +30,9 @@
     "recompose": "^0.30.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "craco build",
-    "test": "craco test --env=jsdom",
+    "start": "catalyst runtime services -s",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "browserslist": [
