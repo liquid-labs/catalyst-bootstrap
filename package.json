@@ -5,16 +5,16 @@
   "license": "ISC",
   "private": true,
   "dependencies": {
-    "@liquid-labs/catalyst-core-api": "file:liquid-labs-catalyst-core-api-0.0.2.tgz",
-    "@liquid-labs/catalyst-core-ui": "file:liquid-labs-catalyst-core-ui-0.0.11.tgz",
+    "@liquid-labs/catalyst-core-api": "0.0.3",
+    "@liquid-labs/catalyst-core-ui": "0.0.12",
     "@liquid-labs/catalyst-firewrap": "^1.0.2",
     "@liquid-labs/catalyst-users-ui": "0.0.11",
     "@liquid-labs/mui-extensions": "0.0.7",
     "@liquid-labs/react-validation": "0.0.5",
     "@liquid-labs/regex-repo": "^1.0.0-alpha.2",
     "@liquid-labs/validators": "0.0.3",
-    "@material-ui/core": "^3.5.1",
-    "@material-ui/icons": "^3.0.1",
+    "@material-ui/core": "^3.9.0",
+    "@material-ui/icons": "^3.0.2",
     "classnames": "^2.2.6",
     "lodash.merge": "^4.6.1",
     "lodash.omit": "^4.5.0",
@@ -25,10 +25,11 @@
     "prop-types": "^15.6.2",
     "react": "^16.x",
     "react-dom": "^16.6.3",
-    "react-redux": "^5.1.1",
+    "react-redux": "^6.0.0",
     "react-router-dom": "^4.3.1",
     "react-scripts": "^2.1.3",
-    "recompose": "^0.30.0"
+    "recompose": "^0.30.0",
+    "redux": "^4.0.1"
   },
   "scripts": {
     "start": "catalyst runtime services -s",
@@ -44,11 +45,15 @@
   ],
   "devDependencies": {
     "@liquid-labs/catalyst-scripts": "^1.0.0-alpha.6",
-    "babel-eslint": "^9.0.0",
     "redux-logger": "^3.0.6"
   },
   "_catalystRequiresService": [
     "sql-mysql",
     "http-html"
-  ]
+  ],
+  "catalyst": {
+    "version-check": {
+      "options": "--skip-unused"
+    }
+  }
 }
