@@ -20,9 +20,9 @@ const rstore = store.reduxStore()
 
 const ConfiguredAppFrame = () =>
   <AuthenticatingAppFrame
-    ContentSwitch={BootstrapContentSwitch}
-    BottomNavigation={BootstrapBottomNavigation}
-    postLoginStatusChangeUrl={bootstrapRoutes.LANDING} />
+      ContentSwitch={BootstrapContentSwitch}
+      BottomNavigation={BootstrapBottomNavigation}
+      postLoginStatusChangeUrl={bootstrapRoutes.LANDING} />
 
 ReactDOM.render(
   <Redux.Provider store={rstore}>
