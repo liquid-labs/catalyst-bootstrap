@@ -4,6 +4,7 @@
   "version": "0.0.2",
   "license": "ISC",
   "private": true,
+  "files": [ "build/" ],
   "dependencies": {
     "@liquid-labs/catalyst-core-api": "0.0.3",
     "@liquid-labs/catalyst-core-ui": "0.0.12",
@@ -32,7 +33,7 @@
     "redux": "^4.0.1"
   },
   "scripts": {
-    "start": "catalyst runtime services -s",
+    "start": "catalyst services start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
