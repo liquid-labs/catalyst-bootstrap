@@ -8,7 +8,7 @@ const Dashboard = () => {
   const accountControl = <AccountControl />
 
   return (
-    <BasicContentFrame AppNavigationProps={{logoTo: '/', rightChildren:  accountControl }}>
+    <BasicContentFrame AppNavigationProps={{ logoTo : '/', rightChildren : accountControl }}>
       <SetupInstructions />
     </BasicContentFrame>
   )

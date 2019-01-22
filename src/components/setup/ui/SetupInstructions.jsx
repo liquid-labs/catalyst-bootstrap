@@ -17,7 +17,7 @@ export const SetupInstructions = () => (
         projects.
         <ol>
           <li>If you don't already have a GCP project, head over to the <a
-            href="https://console.cloud.google.com/">GCP console</a> and create
+              href="https://console.cloud.google.com/">GCP console</a> and create
             a new project if you don't already have one.</li>
           <li>Head to the <a href="https://console.firebase.google.com/">Firebase
             console</a> and create a project, attached the GCP project, if you
@@ -61,7 +61,7 @@ service cloud.firestore {
     }
   }
 }`}
-</pre></li>
+            </pre></li>
         </ol>
       </li>
       <li>Back to the <a href={authSettingsUrl}>authentication management screen</a> and click 'Web setup'.
@@ -74,7 +74,7 @@ service cloud.firestore {
           <li>Copy the <code>storageBucket</code> value to <code>REACT_APP_FIREBASE_STORAGE_BUCKET</code>.</li>
           <li>Copy the <code>messagingSenderId</code> value to <code>REACT_APP_FIREBASE_MESSAGING_SENDER_ID</code>.</li>
           <li>TODO: provide widget to accept value hash and generate the config file text.</li>
-          </ol>
+        </ol>
       </li>
       <li>Restart the development server and the bootstrap login screen should appear.</li>
     </ol>

@@ -15,7 +15,7 @@ config.setBaseUrl(baseUrl)
 // config.setContexts(contexts)
 
 const rootReducer = combineReducers(Object.assign({
-    sessionState: sessionReducer,
-  },
-  coreReducers))
+  sessionState : sessionReducer,
+},
+coreReducers))
 config.setRootReducer(rootReducer)
