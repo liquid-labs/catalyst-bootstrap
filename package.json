@@ -1,7 +1,7 @@
 {
   "name": "@liquid-labs/catalyst-bootstrap",
   "homepage": "https://zanerock.github.io/@liquid-labs/catalyst-bootstrap",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "ISC",
   "private": true,
   "dependencies": {
