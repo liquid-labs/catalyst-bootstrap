@@ -6,12 +6,14 @@ import { Route, Switch, withRouter } from 'react-router-dom'
 
 import { Dashboard } from '../components/app/ui/Dashboard'
 import { FourOhFour } from '../components/app/ui/FourOhFour'
+import { UserProfile } from '@liquid-labs/catalyst-users-ui'
 
 import * as bootstrapRoutes from './bootstrapRoutes'
 
 const BootstrapContentSwitchBase = ({location}) =>
   <Switch>
-    <Route exact path={bootstrapRoutes.LANDING} component={() => <Dashboard />} />
+    <Route exact path={bootstrapRoutes.LANDING} component={Dashboard} />
+    <Route exact path='/users/self/profile' component={UserProfile} />
     { /* default 404/Not Found handler */ }
     <Route component={() => <FourOhFour noAuthRedirect={bootstrapRoutes.LANDING} />} />
   </Switch>
