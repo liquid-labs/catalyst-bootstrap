@@ -4,12 +4,15 @@
   "version": "0.0.2",
   "license": "ISC",
   "private": true,
-  "files": [ "build/" ],
+  "files": [
+    "build/"
+  ],
   "dependencies": {
     "@liquid-labs/catalyst-core-api": "0.0.3",
     "@liquid-labs/catalyst-core-ui": "0.0.12",
     "@liquid-labs/catalyst-firewrap": "^1.0.2",
-    "@liquid-labs/catalyst-users-ui": "0.0.11",
+    "@liquid-labs/catalyst-theme": "file:liquid-labs-catalyst-theme-0.0.1.tgz",
+    "@liquid-labs/catalyst-users-ui": "file:liquid-labs-catalyst-users-ui-0.0.12.tgz",
     "@liquid-labs/mui-extensions": "0.0.7",
     "@liquid-labs/react-validation": "0.0.5",
     "@liquid-labs/regex-repo": "^1.0.0-alpha.2",
