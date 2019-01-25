@@ -5,7 +5,8 @@ import ReactDOM from 'react-dom'
 
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import { BootstrapContentSwitch } from './app/BootstrapContentSwitch'
-import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
+import { createCatalystTheme } from '@liquid-labs/catalyst-theme'
+import { MuiThemeProvider } from '@material-ui/core/styles'
 
 import { AuthenticatingAppFrame } from '@liquid-labs/catalyst-users-ui'
 import { BootstrapBottomNavigation } from './components/app/ui/BootstrapBottomNavigation'
@@ -15,7 +16,7 @@ import * as bootstrapRoutes from './app/bootstrapRoutes'
 
 import './index.css'
 
-const theme = createMuiTheme()
+const theme = createCatalystTheme()
 const rstore = store.reduxStore()
 
 const ConfiguredAppFrame = () =>
