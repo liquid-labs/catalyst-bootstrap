@@ -8,9 +8,10 @@
     "build/"
   ],
   "dependencies": {
-    "@liquid-labs/catalyst-core-api": "0.0.3",
+    "@liquid-labs/catalyst-core-api": "file:liquid-labs-catalyst-core-api-0.0.4.tgz",
     "@liquid-labs/catalyst-core-ui": "0.0.14",
     "@liquid-labs/catalyst-firewrap": "^1.0.2",
+    "@liquid-labs/catalyst-persons-api": "file:liquid-labs-catalyst-persons-api-1.0.0-prototype1.tgz",
     "@liquid-labs/catalyst-theme": "0.0.1",
     "@liquid-labs/catalyst-users-ui": "0.0.14",
     "@liquid-labs/mui-extensions": "0.0.10",
@@ -52,8 +53,37 @@
     "redux-logger": "^3.0.6"
   },
   "_catalystRequiresService": [
-    "sql-mysql",
-    "http-html"
+    {
+      "iface": "sql-mysql",
+      "params-req": [],
+      "params-opt": [],
+      "config-const": []
+    },
+    {
+      "iface": "html",
+      "params-req": [],
+      "params-opt": [],
+      "config-const": []
+    },
+    {
+      "iface": "rest",
+      "params-req": [
+        "CLOUDSQL_INSTANCE_NAME",
+        "CLOUDSQL_CONNECTION_PROT",
+        "CLOUDSQL_CONNECTION_NAME",
+        "CLOUDSQL_CREDS",
+        "CLOUDSQL_DB",
+        "CLOUDSQL_USER",
+        "CLOUDSQL_PASSWORD",
+        "GCP_PROJECT_ID",
+        "FIREBASE_DB_URL",
+        "FIREBASE_CREDS_FILE"
+      ],
+      "params-opt": [],
+      "config-const": {
+        "ADD_GO_APP_PERSONS": "@liquid-labs/catalyst-persons-api:go/app.yaml"
+      }
+    }
   ],
   "catalyst": {
     "version-check": {
