@@ -1,7 +1,5 @@
 import React from 'react'
 
-import PropTypes from 'prop-types'
-
 import { Route, Switch } from 'react-router-dom'
 
 import { Dashboard } from '../components/app/ui/Dashboard'
