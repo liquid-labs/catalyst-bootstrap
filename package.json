@@ -15,6 +15,7 @@
     "@liquid-labs/catalyst-theme": "latest",
     "@liquid-labs/catalyst-users-ui": "latest",
     "@liquid-labs/mui-extensions": "latest",
+    "@liquid-labs/react-await": "^1.0.0-prototype.1",
     "@liquid-labs/react-validation": "latest",
     "@liquid-labs/regex-repo": "latest",
     "@liquid-labs/validators": "latest",

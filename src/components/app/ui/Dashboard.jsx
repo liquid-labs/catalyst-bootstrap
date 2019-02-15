@@ -1,14 +1,14 @@
 import React from 'react'
 
-import { AccountControl } from '@liquid-labs/catalyst-users-ui'
+import { AccountControlWidget } from '@liquid-labs/catalyst-users-ui'
 import { BasicContentFrame } from '@liquid-labs/catalyst-core-ui'
 import { SetupInstructions } from '../../setup/ui/SetupInstructions'
 
 const Dashboard = () => {
-  const accountControl = <AccountControl />
+  const accountControlWidget = <AccountControlWidget />
 
   return (
-    <BasicContentFrame AppNavigationProps={{ logoTo : '/', rightChildren : accountControl }}>
+    <BasicContentFrame AppNavigationProps={{ logoTo : '/', rightChildren : accountControlWidget }}>
       <SetupInstructions />
     </BasicContentFrame>
   )

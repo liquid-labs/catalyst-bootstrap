@@ -1,13 +1,13 @@
 import React from 'react'
 
-import { AccountControl } from '@liquid-labs/catalyst-users-ui'
+import { AccountControlWidget } from '@liquid-labs/catalyst-users-ui'
 import { BasicContentFrame, FourOhFour as FourOhFourContent } from '@liquid-labs/catalyst-core-ui'
 
 const FourOhFour = (FourOhFourContentProps) => {
-  const accountControl = <AccountControl />
+  const accountControlWidget = <AccountControlWidget />
 
   return (
-    <BasicContentFrame AppNavigationProps={{ logoTo : '/', rightChildren : accountControl }}>
+    <BasicContentFrame AppNavigationProps={{ logoTo : '/', rightChildren : accountControlWidget }}>
       <FourOhFourContent {...FourOhFourContentProps} />
     </BasicContentFrame>
   )

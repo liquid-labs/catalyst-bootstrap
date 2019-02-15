@@ -8,7 +8,8 @@ import { BootstrapContentSwitch } from './app/BootstrapContentSwitch'
 import { createCatalystTheme } from '@liquid-labs/catalyst-theme'
 import { MuiThemeProvider } from '@material-ui/core/styles'
 
-import { AuthenticatingAppFrame } from '@liquid-labs/catalyst-users-ui'
+import { AppFrame } from '@liquid-labs/catalyst-core-ui'
+import { AuthenticationManager } from '@liquid-labs/catalyst-users-ui'
 import { BootstrapBottomNavigation } from './components/app/ui/BootstrapBottomNavigation'
 
 import { store } from '@liquid-labs/catalyst-core-ui'
@@ -20,7 +21,7 @@ const theme = createCatalystTheme()
 const rstore = store.reduxStore()
 
 const ConfiguredAppFrame = () =>
-  <AuthenticatingAppFrame
+  <AppFrame
       ContentSwitch={BootstrapContentSwitch}
       BottomNavigation={BootstrapBottomNavigation}
       postLoginStatusChangeUrl={bootstrapRoutes.LANDING} />
@@ -28,9 +29,11 @@ const ConfiguredAppFrame = () =>
 ReactDOM.render(
   <Redux.Provider store={rstore}>
     <MuiThemeProvider theme={theme}>
-      <Router>
-        <Route path="/" component={ConfiguredAppFrame} />
-      </Router>
+      <AuthenticationManager>
+        <Router>
+          <Route path="/" component={ConfiguredAppFrame} />
+        </Router>
+      </AuthenticationManager>
     </MuiThemeProvider>
   </Redux.Provider>,
   document.getElementById('root'))
