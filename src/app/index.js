@@ -13,5 +13,5 @@ config.setBaseUrl(baseUrl)
 // config.setResources(resources)
 // config.setContexts(contexts)
 
-const rootReducer = combineReducers(coreReducers)
-config.setRootReducer(rootReducer)
+store.setRootReducer(rootReducer)
+store.init()
