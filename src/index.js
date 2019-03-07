@@ -1,6 +1,7 @@
 import React from 'react'
 import { render } from 'react-dom'
 import './app'
+import { basicWaiterSetup } from '@liquid-labs/react-waiter'
 
 import { BootstrapContentSwitch } from './app/BootstrapContentSwitch'
 
@@ -14,6 +15,8 @@ import './index.css'
 
 const theme = createCatalystTheme()
 const { reduxStore } = coreInit()
+
+basicWaiterSetup()
 
 render(
   <CatalystAppFrame
