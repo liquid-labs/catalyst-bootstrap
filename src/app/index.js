@@ -1,16 +1,15 @@
 /*, contextSettings */
 import { coreSetup, resourcesSettings } from '@liquid-labs/catalyst-core-api'
 
-// import { resources } from './bootstrapResources'
+import { resources } from './bootstrapResources'
+import { resourceURLs } from './apiConfig'
 // import { contexts } from './bootstrapsContexts'
 
-const baseUrl = process.env.NODE_ENV === 'production'
-  ? "https://uno-delivery-test.appspot.com/api" // TODO: parameterize this
-  : "http://localhost:8080/api"
+resources.forEach((resourceConf) =>
+  resourceConf.baseURL = resourceURLs[resourceConf.resourceName]
+)
 
-resourcesSettings.setBaseUrl(baseUrl)
-resourcesSettings.setResources([])
-// resourcesSettings.setResources(resources)
+resourcesSettings.setResources(resources)
 // contextSettings.setContexts(contexts)
 
 coreSetup()
