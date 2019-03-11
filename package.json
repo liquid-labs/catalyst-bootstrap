@@ -17,7 +17,7 @@
     "@liquid-labs/mui-extensions": "^1.0.0-prototype.0",
     "@liquid-labs/react-await": "^1.0.0-prototype.9",
     "@liquid-labs/react-validation": "latest",
-    "@liquid-labs/react-waiter": "file:.yalc/@liquid-labs/react-waiter",
+    "@liquid-labs/react-waiter": "^1.0.0-prototype.11",
     "@liquid-labs/regex-repo": "latest",
     "@liquid-labs/validators": "latest",
     "@material-ui/core": "^3.9.2",
