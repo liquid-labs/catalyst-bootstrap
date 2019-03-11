@@ -10,7 +10,7 @@
   "dependencies": {
     "@liquid-labs/catalyst-core-api": "file:.yalc/@liquid-labs/catalyst-core-api",
     "@liquid-labs/catalyst-core-ui": "file:.yalc/@liquid-labs/catalyst-core-ui",
-    "@liquid-labs/catalyst-firewrap": "file:.yalc/@liquid-labs/catalyst-firewrap",
+    "@liquid-labs/catalyst-firewrap": "^2.0.0-prototype.1",
     "@liquid-labs/catalyst-persons-api": "file:.yalc/@liquid-labs/catalyst-persons-api",
     "@liquid-labs/catalyst-theme": "^1.0.0-prototype.1",
     "@liquid-labs/catalyst-users-ui": "file:.yalc/@liquid-labs/catalyst-users-ui",
