@@ -8,17 +8,17 @@
     "build/"
   ],
   "dependencies": {
-    "@liquid-labs/catalyst-core-api": "file:.yalc/@liquid-labs/catalyst-core-api",
-    "@liquid-labs/catalyst-core-ui": "file:.yalc/@liquid-labs/catalyst-core-ui",
+    "@liquid-labs/catalyst-core-api": "^1.0.0-prototype.6",
+    "@liquid-labs/catalyst-core-ui": "^1.0.0-prototype.6",
     "@liquid-labs/catalyst-firewrap": "^2.0.0-prototype.1",
-    "@liquid-labs/catalyst-persons-api": "file:.yalc/@liquid-labs/catalyst-persons-api",
-    "@liquid-labs/catalyst-theme": "^1.0.0-prototype.1",
-    "@liquid-labs/catalyst-users-ui": "file:.yalc/@liquid-labs/catalyst-users-ui",
+    "@liquid-labs/catalyst-persons-api": "^1.0.0-prototype.4",
+    "@liquid-labs/catalyst-theme": "^1.0.0-prototype.2",
+    "@liquid-labs/catalyst-users-ui": "^1.0.0-prototype.1",
     "@liquid-labs/mui-extensions": "^1.0.0-prototype.0",
-    "@liquid-labs/react-await": "^1.0.0-prototype.9",
-    "@liquid-labs/react-validation": "file:.yalc/@liquid-labs/react-validation",
+    "@liquid-labs/react-validation": "^1.0.0-prototype.0",
     "@liquid-labs/react-waiter": "^1.0.0-prototype.11",
     "@liquid-labs/regex-repo": "^1.0.0-alpha.3",
+    "@liquid-labs/restful-paths": "^1.0.0-prototype.2",
     "@liquid-labs/validators": "^1.0.0-prototype.2",
     "@material-ui/core": "^3.9.2",
     "@material-ui/icons": "^3.0.2",
@@ -40,7 +40,8 @@
     "react-dom": "^16.8.3",
     "react-redux": "^6.0.1",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "^2.1.5",
+    "react-scripts": "^2.1.8",
+    "react-sizes": "^1.0.4",
     "recompose": "^0.30.0",
     "redux": "^4.0.1",
     "redux-thunk": "^2.3.0"
@@ -59,7 +60,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "@liquid-labs/catalyst-scripts": "^1.0.0-alpha.16",
+    "@liquid-labs/catalyst-scripts": "^1.0.0-alpha.17",
     "redux-logger": "^3.0.6"
   },
   "_catalystRequiresService": [
