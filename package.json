@@ -8,10 +8,10 @@
     "build/"
   ],
   "dependencies": {
-    "@liquid-labs/catalyst-core-api": "^1.0.0-prototype.7",
+    "@liquid-labs/catalyst-core-api": "^1.0.0-prototype.10",
     "@liquid-labs/catalyst-core-ui": "^1.0.0-prototype.7",
     "@liquid-labs/catalyst-firewrap": "^2.0.0-prototype.1",
-    "@liquid-labs/catalyst-persons-api": "^1.0.0-prototype.4",
+    "@liquid-labs/catalyst-persons-api": "^1.0.0-prototype.5",
     "@liquid-labs/catalyst-theme": "^1.0.0-prototype.2",
     "@liquid-labs/catalyst-users-ui": "^1.0.0-prototype.2",
     "@liquid-labs/mui-extensions": "^1.0.0-prototype.0",
