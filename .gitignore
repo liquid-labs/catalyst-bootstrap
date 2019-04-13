@@ -1,6 +1,5 @@
 /build
 /node_modules
 /.env
-/.catalyst
 /.yalc
 /yalc.lock
