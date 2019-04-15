@@ -8,7 +8,7 @@
     "build/"
   ],
   "dependencies": {
-    "@liquid-labs/catalyst-core-api": "^1.0.0-prototype.10",
+    "@liquid-labs/catalyst-core-api": "^1.0.0-prototype.11",
     "@liquid-labs/catalyst-core-ui": "^1.0.0-prototype.7",
     "@liquid-labs/catalyst-firewrap": "^2.0.0-prototype.1",
     "@liquid-labs/catalyst-persons-api": "^1.0.0-prototype.5",
@@ -82,7 +82,7 @@
         "CLOUDSQL_INSTANCE_NAME",
         "CLOUDSQL_CONNECTION_PROT",
         "CLOUDSQL_CONNECTION_NAME",
-        "CLOUDSQL_CREDS",
+        "CLOUDSQL_SERVICE_ACCT",
         "CLOUDSQL_DB",
         "CLOUDSQL_USER",
         "CLOUDSQL_PASSWORD",
