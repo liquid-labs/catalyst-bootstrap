@@ -12,12 +12,32 @@ import { coreInit } from '@liquid-labs/catalyst-core-api'
 
 import './index.css'
 
-const theme = createCatalystTheme({ palette: { background: { default: '#fff' }}})
+const theme = createCatalystTheme(
+  {
+    palette: { background: { default: '#fff' } },
+    overrides: {
+      AppNavigation : {
+        root : { boxShadow : 'none', border : 'none' },
+        lightNavbar : { border : 'none' },
+      },
+      MuiToolbar : {
+        root : { border : 'none', minHeight : 'unset' },
+      },
+     }
+  }
+)
+const theme2 = createCatalystTheme({ palette: { background: { default: '#a00' }}})
+
+const themeRouter = [
+  [/^[/]$/, theme],
+  [/.*/, theme2]
+]
+
 const { reduxStore } = coreInit()
 
 render(
   <CatalystAppFrame
-      theme={theme}
+      themeRouter={themeRouter}
       reduxStore={reduxStore}
       ContentSwitch={BootstrapContentSwitch}
       BottomNavigation={BootstrapBottomNavigation} />,

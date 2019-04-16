@@ -9,7 +9,7 @@
   ],
   "dependencies": {
     "@liquid-labs/catalyst-core-api": "^1.0.0-prototype.11",
-    "@liquid-labs/catalyst-core-ui": "^1.0.0-prototype.7",
+    "@liquid-labs/catalyst-core-ui": "file:.yalc/@liquid-labs/catalyst-core-ui",
     "@liquid-labs/catalyst-firewrap": "^2.0.0-prototype.1",
     "@liquid-labs/catalyst-persons-api": "^1.0.0-prototype.5",
     "@liquid-labs/catalyst-theme": "^1.0.0-prototype.2",
