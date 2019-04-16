@@ -60,7 +60,6 @@ const AppMenu = () => {
 
   const classes = useAppMenuStyle()
   const theme = useTheme()
-  console.log(theme)
   const iconClassName = classNames(theme.layout && theme.layout.header.variant === 'dense' && classes.denseButton)
 
   return (
