@@ -13,7 +13,7 @@
     "@liquid-labs/catalyst-firewrap": "^2.0.0-prototype.1",
     "@liquid-labs/catalyst-persons-api": "^1.0.0-prototype.5",
     "@liquid-labs/catalyst-theme": "file:.yalc/@liquid-labs/catalyst-theme",
-    "@liquid-labs/catalyst-users-ui": "^1.0.0-prototype.2",
+    "@liquid-labs/catalyst-users-ui": "file:.yalc/@liquid-labs/catalyst-users-ui",
     "@liquid-labs/mui-extensions": "^1.0.0-prototype.0",
     "@liquid-labs/react-validation": "^1.0.0-prototype.0",
     "@liquid-labs/react-waiter": "^1.0.0-prototype.11",

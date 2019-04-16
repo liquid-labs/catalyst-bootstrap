@@ -28,6 +28,9 @@ const theme = createCatalystTheme(
     },
     layout : {
       header : {
+        logo    : {
+          visible : false,
+        },
         variant : 'dense'
       }
     }
