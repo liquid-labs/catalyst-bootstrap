@@ -20,10 +20,17 @@ const theme = createCatalystTheme(
         root : { boxShadow : 'none', border : 'none' },
         lightNavbar : { border : 'none' },
       },
+      MuiIconButton : { root : {} },
       MuiToolbar : {
         root : { border : 'none', minHeight : 'unset' },
+        dense : { minHeight: '36px' },
       },
-     }
+    },
+    layout : {
+      header : {
+        variant : 'dense'
+      }
+    }
   }
 )
 const theme2 = createCatalystTheme({ palette: { background: { default: '#a00' }}})
