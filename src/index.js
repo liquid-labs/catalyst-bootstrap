@@ -12,7 +12,7 @@ import { coreInit } from '@liquid-labs/catalyst-core-api'
 
 import './index.css'
 
-const theme = createCatalystTheme()
+const theme = createCatalystTheme({ palette: { background: { default: '#fff' }}})
 const { reduxStore } = coreInit()
 
 render(
