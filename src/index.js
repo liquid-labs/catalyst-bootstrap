@@ -29,17 +29,20 @@ const theme = createCatalystTheme(
     },
     layout : {
       header : {
-        logo    : {
-          visible : false,
-        },
-        variant : 'dense',
-        appMenu : { node: <AppMenu /> },
+        showLogo : false,
+        variant  : 'dense',
+        appMenu  : { node: <AppMenu /> },
       },
+    },
+    branding : {
+      splash : {
+        url : 'https://liquid-labs.com/static/img/landing/liquid-labs-logo-landscape.svg',
+        altText : 'Liquid Labs logo'
+      }
     }
   }
 )
 const theme2 = createCatalystTheme({
-  palette: { background: { default: '#a00' }},
   layout: {
     header : {
       appMenu : { node: <AppMenu /> }
