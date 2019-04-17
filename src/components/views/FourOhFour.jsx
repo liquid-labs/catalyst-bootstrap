@@ -7,7 +7,7 @@ const FourOhFour = (FourOhFourContentProps) => {
   const accountControlWidget = <AccountControlWidget />
 
   return (
-    <BasicContentFrame AppNavigationProps={{ logoTo : '/', rightChildren : accountControlWidget }}>
+    <BasicContentFrame>
       <FourOhFourContent {...FourOhFourContentProps} />
     </BasicContentFrame>
   )
