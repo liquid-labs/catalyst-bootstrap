@@ -4,6 +4,7 @@ import './app'
 
 import { BootstrapContentSwitch } from './app/BootstrapContentSwitch'
 
+import { AppMenu } from './components/widgets/AppMenu'
 import { CatalystAppFrame } from '@liquid-labs/catalyst-core-ui'
 import { BootstrapBottomNavigation } from './components/app/ui/BootstrapBottomNavigation'
 
@@ -31,12 +32,20 @@ const theme = createCatalystTheme(
         logo    : {
           visible : false,
         },
-        variant : 'dense'
-      }
+        variant : 'dense',
+        appMenu : { node: <AppMenu /> },
+      },
     }
   }
 )
-const theme2 = createCatalystTheme({ palette: { background: { default: '#a00' }}})
+const theme2 = createCatalystTheme({
+  palette: { background: { default: '#a00' }},
+  layout: {
+    header : {
+      appMenu : { node: <AppMenu /> }
+    }
+  }
+})
 
 const themeRouter = [
   [/^[/]$/, theme],
