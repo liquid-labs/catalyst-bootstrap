@@ -15,7 +15,17 @@ import './index.css'
 
 const theme = createCatalystTheme(
   {
-    palette: { background: { default: '#fff' } },
+    palette: {
+      background: { default: '#fff' },
+      primary : {
+        main          : '#1b3382',
+        contrastText  : 'white',
+      },
+      secondary : {
+        main : '#d96201',
+        contrastText : 'white'
+      }
+    },
     overrides: {
       AppNavigation : {
         root : { boxShadow : 'none', border : 'none' },
