@@ -63,7 +63,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "@liquid-labs/catalyst-scripts": "^1.0.0-alpha.19",
+    "@liquid-labs/catalyst-scripts": "^1.0.0-alpha.21",
     "redux-logger": "^3.0.6"
   },
   "_catalystRequiresService": [
