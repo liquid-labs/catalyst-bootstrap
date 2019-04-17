@@ -2,8 +2,8 @@ import React from 'react'
 
 import { Route, Switch } from 'react-router-dom'
 
-import { Dashboard } from '../components/app/ui/Dashboard'
-import { FourOhFour } from '../components/app/ui/FourOhFour'
+import { Dashboard } from '../components/views/Dashboard'
+import { FourOhFour } from '../components/views/FourOhFour'
 import { UserProfile } from '@liquid-labs/catalyst-users-ui'
 
 import * as bootstrapRoutes from './bootstrapRoutes'

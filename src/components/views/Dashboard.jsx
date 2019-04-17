@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { BasicContentFrame } from '@liquid-labs/catalyst-core-ui'
-// import { SetupInstructions } from '../../setup/ui/SetupInstructions'
+// import { SetupInstructions } from './SetupInstructions'
 
 import Grid from '@material-ui/core/Grid'
 import Markdown from 'react-markdown'

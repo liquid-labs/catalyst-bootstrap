@@ -6,7 +6,7 @@ import { BootstrapContentSwitch } from './app/BootstrapContentSwitch'
 
 import { AppMenu } from './components/widgets/AppMenu'
 import { CatalystAppFrame } from '@liquid-labs/catalyst-core-ui'
-import { BootstrapBottomNavigation } from './components/app/ui/BootstrapBottomNavigation'
+import { BootstrapBottomNavigation } from './components/widgets/BootstrapBottomNavigation'
 
 import { createCatalystTheme } from '@liquid-labs/catalyst-theme'
 import { coreInit } from '@liquid-labs/catalyst-core-api'
