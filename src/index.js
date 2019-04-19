@@ -48,9 +48,9 @@ const theme = createCatalystTheme(
       }
     },
     overrides: {
-      AppMenu : {
+      AppMenuBar : {
         root : { boxShadow : 'none', border : 'none' },
-        lightNavbar : { border : 'none' },
+        lightNavbar : { borderBottom : 'none' },
       },
       MuiIconButton : { root : {} },
       MuiToolbar : {
