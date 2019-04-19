@@ -48,7 +48,7 @@ const theme = createCatalystTheme(
       }
     },
     overrides: {
-      AppNavigation : {
+      AppMenu : {
         root : { boxShadow : 'none', border : 'none' },
         lightNavbar : { border : 'none' },
       },
