@@ -6,7 +6,12 @@ import { BootstrapContentSwitch } from './app/BootstrapContentSwitch'
 
 import { AppMenu } from './components/widgets/AppMenu'
 import { CatalystAppFrame } from '@liquid-labs/catalyst-core-ui'
-import { BootstrapBottomNavigation } from './components/widgets/BootstrapBottomNavigation'
+
+import AppsIcon from '@material-ui/icons/Apps'
+import CodeIcon from '@material-ui/icons/Code'
+import SearchIcon from '@material-ui/icons/Search'
+import SecurityIcon from '@material-ui/icons/Security'
+import SourceMergeIcon from 'mdi-material-ui/SourceMerge'
 
 import { createCatalystTheme } from '@liquid-labs/catalyst-theme'
 import { coreInit } from '@liquid-labs/catalyst-core-api'
@@ -64,6 +69,14 @@ const theme = createCatalystTheme(
         variant  : 'dense',
         appMenu  : { node: <AppMenu /> },
       },
+      sections :
+      [
+        { label: 'App development', path: '/views/app-development/', Icon: CodeIcon },
+        { label: 'Tech & security services', path: '/views/tech-and-security-services/', Icon: SecurityIcon },
+        { label: 'Contributor opportunities', path: '/views/contributor-opportunities/', Icon: SourceMergeIcon },
+        { label: 'Apps library', path: '/views/app-library/', Icon: AppsIcon },
+        { label: 'Search', onClick: () => alert('TODO: Search!'), Icon: SearchIcon }
+      ]
     },
     branding : {
       header : {
@@ -100,6 +113,5 @@ render(
   <CatalystAppFrame
       themeRouter={themeRouter}
       reduxStore={reduxStore}
-      ContentSwitch={BootstrapContentSwitch}
-      BottomNavigation={BootstrapBottomNavigation} />,
+      ContentSwitch={BootstrapContentSwitch} />,
   document.getElementById('root'))
