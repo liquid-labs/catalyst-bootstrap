@@ -78,7 +78,6 @@ const theme = createCatalystTheme(
         { label: 'Tech & security services', path: '/views/tech-and-security-services/', Icon: SecurityIcon },
         { label: 'Contributor opportunities', path: '/views/contributor-opportunities/', Icon: SourceMergeIcon },
         { label: 'Apps library', path: '/views/app-library/', Icon: AppsIcon },
-        { label: 'Search', onClick: () => alert('TODO: Search!'), Icon: SearchIcon }
       ]
     },
     branding : {
