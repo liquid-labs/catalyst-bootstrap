@@ -32,7 +32,7 @@ template var foo: {{foo}}`
 */
 
 const NavCard = ({key, title, description, icon, ...props}) => (
-  <div key={key} {...props}>
+  <div {...props}>
     <div>
       {icon}{title}
     </div>
@@ -47,9 +47,9 @@ const Dashboard = () => {
       <SplashLogo />
       <CardContainer>
         {
-          theme.layout.sections.map((sectionDef) => {
+          theme.layout.sections.map((sectionDef, i) => {
             const { label, path, onClick, Icon } = sectionDef
-            return <NavCard key={path} icon={<Icon />} title={label} description={label} />
+            return <NavCard key={path || 'section-' + i} icon={<Icon />} title={label} description={label} />
           })
         }
       </CardContainer>
