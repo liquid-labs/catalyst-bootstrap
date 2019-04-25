@@ -10,6 +10,8 @@ import ListItemIcon from '@material-ui/core/ListItemIcon'
 import ListItemText from '@material-ui/core/ListItemText'
 
 import DarkThemeIcon from 'mdi-material-ui/WeatherNight'
+import FeedbackIcon from '@material-ui/icons/Feedback'
+import LanguageIcon from '@material-ui/icons/Language'
 import LightThemeIcon from 'mdi-material-ui/WhiteBalanceSunny'
 import MenuIcon from '@material-ui/icons/Menu'
 
@@ -48,6 +50,15 @@ const AppMenu = () => {
         <MenuItem onClick={null}>
           <ListItemIcon><DarkThemeIcon /></ListItemIcon>
           <ListItemText>Dark theme</ListItemText>
+        </MenuItem>
+        <MenuItem onClick={null}>
+          <ListItemIcon><LanguageIcon /></ListItemIcon>
+          <ListItemText>Language</ListItemText>
+        </MenuItem>
+        <Divider />
+        <MenuItem onClick={null}>
+          <ListItemIcon><FeedbackIcon /></ListItemIcon>
+          <ListItemText>Feedback</ListItemText>
         </MenuItem>
       </Menu>
       <AuthenticationDialog open={authenticationDialogOpen}
