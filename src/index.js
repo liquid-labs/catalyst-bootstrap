@@ -69,6 +69,9 @@ const theme = createCatalystTheme(
         variant  : 'dense',
         appMenu  : { node: <AppMenu /> },
       },
+      navigation : {
+        visible: false,
+      },
       sections :
       [
         { label: 'App development', path: '/views/app-development/', Icon: CodeIcon },
