@@ -12,7 +12,7 @@ const SplashLogo = () => {
   var logo
   if (theme.branding && theme.branding.splash) {
     const { node, url, altText } = theme.branding.splash
-    logo = node || <img src={url} alt={altText} style={{height : '100%', width: '100%' }}/>
+    logo = node || <img src={`${url}#svgView(preserveAspectRatio(xMidYMid meet))`} alt={altText} />
   }
 
   return (
