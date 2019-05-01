@@ -8,13 +8,14 @@
     "build/"
   ],
   "dependencies": {
-    "@liquid-labs/catalyst-core-api": "^1.0.0-prototype.11",
+    "@liquid-labs/catalyst-core-api": "file:.yalc/@liquid-labs/catalyst-core-api",
     "@liquid-labs/catalyst-core-ui": "file:.yalc/@liquid-labs/catalyst-core-ui",
     "@liquid-labs/catalyst-firewrap": "^2.0.0-prototype.1",
     "@liquid-labs/catalyst-persons-api": "^1.0.0-prototype.5",
     "@liquid-labs/catalyst-theme": "file:.yalc/@liquid-labs/catalyst-theme",
     "@liquid-labs/catalyst-users-ui": "file:.yalc/@liquid-labs/catalyst-users-ui",
     "@liquid-labs/mui-extensions": "file:.yalc/@liquid-labs/mui-extensions",
+    "@liquid-labs/mui-two-tone": "file:.yalc/@liquid-labs/mui-two-tone",
     "@liquid-labs/react-validation": "^1.0.0-prototype.1",
     "@liquid-labs/react-viewport-context": "^1.0.0-prototype.4",
     "@liquid-labs/react-waiter": "^1.0.0-prototype.11",
