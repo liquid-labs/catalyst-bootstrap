@@ -3,3 +3,13 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.logoHeader {
+  fill: #1b3382;
+  height: 28px;
+  margin-top: 4px;
+}
+
+.logoHeader:hover {
+  fill: #d96201;
+}
