@@ -8,19 +8,20 @@
     "build/"
   ],
   "dependencies": {
-    "@liquid-labs/catalyst-core-api": "file:.yalc/@liquid-labs/catalyst-core-api",
+    "@liquid-labs/catalyst-core-api": "^1.0.0-prototype.16",
     "@liquid-labs/catalyst-core-ui": "file:.yalc/@liquid-labs/catalyst-core-ui",
-    "@liquid-labs/catalyst-firewrap": "^2.0.0-prototype.1",
-    "@liquid-labs/catalyst-persons-api": "^1.0.0-prototype.5",
+    "@liquid-labs/catalyst-firewrap": "^2.0.0-prototype.2",
+    "@liquid-labs/catalyst-persons-api": "^1.0.0-prototype.8",
     "@liquid-labs/catalyst-theme": "file:.yalc/@liquid-labs/catalyst-theme",
     "@liquid-labs/catalyst-users-ui": "file:.yalc/@liquid-labs/catalyst-users-ui",
-    "@liquid-labs/mui-extensions": "file:.yalc/@liquid-labs/mui-extensions",
-    "@liquid-labs/mui-two-tone": "file:.yalc/@liquid-labs/mui-two-tone",
-    "@liquid-labs/react-validation": "^1.0.0-prototype.1",
+    "@liquid-labs/liquid-dev-cloudsql": "^1.0.0-prototype.0",
+    "@liquid-labs/mui-extensions": "^1.0.0-prototype.1",
+    "@liquid-labs/mui-two-tone": "^1.0.0-prototype.1",
+    "@liquid-labs/react-validation": "^1.0.0-prototype.2",
     "@liquid-labs/react-viewport-context": "^1.0.0-prototype.4",
     "@liquid-labs/react-waiter": "^1.0.0-prototype.11",
     "@liquid-labs/regex-repo": "^1.0.0-alpha.3",
-    "@liquid-labs/restful-paths": "^1.0.0-prototype.2",
+    "@liquid-labs/restful-paths": "^1.0.0-prototype.4",
     "@liquid-labs/validators": "^1.0.0-prototype.2",
     "@material-ui/core": "^3.9.3",
     "@material-ui/icons": "^3.0.2",
@@ -28,28 +29,28 @@
     "classnames": "^2.2.6",
     "focus-trap-react": "^6.0.0",
     "lodash.isequal": "^4.5.0",
-    "lodash.merge": "^4.6.1",
+    "lodash.merge": "^4.6.2",
     "lodash.omit": "^4.5.0",
     "lodash.pick": "^4.4.0",
     "lodash.reduce": "^4.6.0",
     "lodash.upperfirst": "^4.3.1",
-    "mdi-material-ui": "^5.10.0",
-    "moment-timezone": "^0.5.23",
-    "normalizr": "^3.3.0",
+    "mdi-material-ui": "^5.16.0",
+    "moment-timezone": "^0.5.26",
+    "normalizr": "^3.4.1",
     "notistack": "^0.6.1",
     "prop-types": "^15.7.2",
-    "query-string": "^6.4.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-markdown": "^4.0.8",
+    "query-string": "^6.8.3",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-markdown": "^4.2.2",
     "react-redux": "^6.0.1",
-    "react-router-dom": "^5.0.0",
+    "react-router-dom": "^5.0.1",
     "react-scripts": "^2.1.8",
     "react-sizes": "^1.0.4",
     "recompose": "^0.30.0",
-    "redux": "^4.0.1",
+    "redux": "^4.0.4",
     "redux-thunk": "^2.3.0",
-    "squirrelly": "^7.1.1"
+    "squirrelly": "^7.5.0"
   },
   "scripts": {
     "start": "catalyst services start",
@@ -68,40 +69,40 @@
     "@liquid-labs/catalyst-scripts": "^1.0.0-alpha.21",
     "redux-logger": "^3.0.6"
   },
-  "_catalystRequiresService": [
-    {
-      "iface": "sql-mysql",
-      "params-req": [],
-      "params-opt": [],
-      "config-const": []
-    },
-    {
-      "iface": "html",
-      "params-req": [],
-      "params-opt": [],
-      "config-const": []
-    },
-    {
-      "iface": "rest",
-      "params-req": [
-        "CLOUDSQL_INSTANCE_NAME",
-        "CLOUDSQL_CONNECTION_PROT",
-        "CLOUDSQL_CONNECTION_NAME",
-        "CLOUDSQL_SERVICE_ACCT",
-        "CLOUDSQL_DB",
-        "CLOUDSQL_USER",
-        "CLOUDSQL_PASSWORD",
-        "GCP_PROJECT_ID",
-        "FIREBASE_DB_URL",
-        "FIREBASE_CREDS_FILE"
-      ],
-      "params-opt": [],
-      "config-const": {
-        "ADD_GO_APP_PERSONS": "@liquid-labs/catalyst-persons-api:go/app.yaml"
-      }
-    }
-  ],
   "catalyst": {
+    "requires": [
+      {
+        "iface": "sql",
+        "params-req": [],
+        "params-opt": [],
+        "config-const": []
+      },
+      {
+        "iface": "html",
+        "params-req": [],
+        "params-opt": [],
+        "config-const": []
+      },
+      {
+        "iface": "rest",
+        "params-req": [
+          "CLOUDSQL_INSTANCE_NAME",
+          "CLOUDSQL_CONNECTION_PROT",
+          "CLOUDSQL_CONNECTION_NAME",
+          "CLOUDSQL_SERVICE_ACCT",
+          "CLOUDSQL_DB",
+          "CLOUDSQL_USER",
+          "CLOUDSQL_PASSWORD",
+          "GCP_PROJECT_ID",
+          "FIREBASE_DB_URL",
+          "FIREBASE_CREDS_FILE"
+        ],
+        "params-opt": [],
+        "config-const": {
+          "ADD_GO_APP_PERSONS": "@liquid-labs/catalyst-persons-api:go/app.yaml"
+        }
+      }
+    ],
     "version-check": {
       "options": "--skip-unused"
     }
